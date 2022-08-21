@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+<head>
+	<title>H2 Computing Sign up Form</title>
+	<link rel="stylesheet" href="exercise_02.css">
+</head>
+<body>
+	<h1>H2 Computing Sign up Form</h1>
+	<p>Please enter your particulars below:</p>
+	<form>
+		<table>
+			<tr>
+				<td>First Name: </td>
+				<td><input type="text" name="f_name" placeholder="First Name"></td>
+				<td>Last Name:</td>
+				<td><input type="text" name="l_name" placeholder="Last Name"></td>
+			</tr>
+			<tr>
+				<td>Email: </td>
+				<td><input type="text" name="email" placeholder="name@gmail.com"></td>
+				<td>Contact: </td>
+				<td><input type="text" name="contact"></td>
+			</tr>
+			<tr>
+				<td>Class: </td>
+				<td><input type="text" name="class"></td>
+				<td>Gender: </td>
+				<td>
+					<select id="gender" name="gender"> 
+						<option value="male">Male</option>
+						<option value="female">Female</option>
+					</select> 
+				</td>
+			</tr>
+			<tr>
+				<td>Date of Birth: </td>
+				<td><input type="date" name="date" value="2022-01-01"></td>
+			</tr>
+		</table>
+		<p>
+			Subject combination:
+		</p>
+		
+		<input type="radio" name="subj_combi" value="P CP M E" id="PCME">
+		<label for="PCME">P CP M E</label>
+		<br>
+		<input type="radio" name="subj_combi" value="C CP M E" id="CCME">
+		<label for="CCME">C CP M E</label>
+		<br>
+		<input type="radio" name="subj_combi" id="Other"> 
+		<label for="Other">Other:</label>
+		<input type="text" name="subj_combi">
+		
+		<p>
+			<input type="submit" name="submit">
+		</p>
+	</form>
+</body>
+</html>
